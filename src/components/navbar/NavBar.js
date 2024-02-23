@@ -21,11 +21,20 @@ export const NavBar = () => {
             </div>
             <div className='flex flex-col gap-3' >
               <NavItem  icon={ <AdminUserImage /> } label={'Yogini'} />
-              <NavItem  icon={<LoomIcon/>} label={'My Network'} />
+              <NavItem  icon={<LoomIcon/>} label={<LoomLabel />} />
             </div>
           </div>
         </div>
         <NavFooter /> 
+    </div>
+  )
+}
+
+const LoomLabel = () => {
+  return(
+    <div className='flex flex-col' >
+      <div>Loom</div>
+      <div className='text-[10px]' >Manage jobs, teams, & more →</div>
     </div>
   )
 }

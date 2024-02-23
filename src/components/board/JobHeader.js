@@ -4,7 +4,7 @@ import { JobPostedByImage } from './helpers'
 
 export const JobHeader = () => {
   return (
-    <div className='w-full bg-[#FAFBFC] flex items-start px-6 py-10 gap-x-4 border-b-[1px] border-[#E1E4E8]' >
+    <div className='w-full bg-[#FAFBFC] flex items-start px-6 py-10 gap-x-4 border-b-[1px] border-[#E1E4E8] sticky top-0' >
         <div className='p-2 border border-[#E1E4E8] rounded-2xl' >
             <PeerlistLogo />
         </div>

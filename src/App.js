@@ -3,7 +3,7 @@ import { NavBar } from "./components/navbar/NavBar";
 
 function App() {
   return (
-    <div className="w-full min-h-screen grid grid-cols-6">
+    <div className="w-full grid grid-cols-6">
       <NavBar />
       <JobsBoard />
     </div>
