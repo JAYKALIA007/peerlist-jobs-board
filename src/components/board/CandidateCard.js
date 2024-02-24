@@ -16,7 +16,7 @@ export const CandidateCard = ({candidate}) => {
         id={name} 
         draggable
         onDragStart={handleDragStart}
-        className='border border-[#E1E4E8] p-4 rounded-lg flex flex-col gap-2 w-[292px] m-2 bg-white' >
+        className='border border-[#E1E4E8] p-4 rounded-lg flex flex-col gap-2 w-[292px] m-2 bg-white hover:cursor-pointer' >
         <div className='flex justify-between' >
             <img 
                 src={thumbnail}

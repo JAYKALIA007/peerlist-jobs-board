@@ -1,6 +1,5 @@
 import { CandidateCard } from './CandidateCard'
 import { AppliedIcon, RejectedIcon, ShortlistedIcon } from '../../icons/Icons'
-import { CANDIDATES } from './constants'
 
 export const CandidatesList = ({candidates, type, setCandidates}) => {
   const isRejectedType = type === 'rejected'
@@ -13,20 +12,6 @@ export const CandidatesList = ({candidates, type, setCandidates}) => {
     const elementToAppend = document.getElementById(data);
     const firstChild = container.firstChild;
     container.insertBefore(elementToAppend, firstChild);
-
-    console.log({ container, data })
-
-    // const id = container.id
-    // console.log({id, data})
-    // console.log(container.contains(elementToAppend));
-
-    // if (!elementToAppend) {
-    //   console.error(`Element with ID ${data} not found.`);
-    //   return;
-    // }
-
-    // const updatedCandidates = CANDIDATES.map(candidate => candidate.name===data ? {...candidate, status : id } : candidate)
-    // setCandidates(updatedCandidates)
   };
 
   const handleDragOver = (e) => {
