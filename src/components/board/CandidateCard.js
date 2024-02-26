@@ -16,21 +16,21 @@ export const CandidateCard = ({candidate}) => {
         id={name} 
         draggable
         onDragStart={handleDragStart}
-        className='border border-[#E1E4E8] p-4 rounded-lg flex flex-col gap-2 w-[292px] m-2 bg-white hover:cursor-pointer' >
+        className='border border-[#E1E4E8] p-4 rounded-lg flex flex-col gap-2 lg:w-[292px] m-2 bg-white hover:cursor-pointer' >
         <div className='flex justify-between' >
             <img 
                 src={thumbnail}
                 alt='candidate thumbnail'
                 className='w-6 h-6 rounded-full object-cover' 
             />
-            <p className='text-[10px] text-[#6A737D]' >Applied 1d ago</p>
+            <p className='hidden lg:block text-[10px] text-[#6A737D]' >Applied 1d ago</p>
         </div>
         <div className='flex gap-1' >
             <div className='text-sm font-semibold' >{name}</div>
             <VerifiedIcon />
         </div>
         <div className='text-xs'>{designation} at Rapid Circle</div>
-        <div className='flex gap-x-4'>
+        <div className='flex flex-col lg:flex-row gap-x-4'>
             <div>
                 <p className='text-[10px] text-[#6A737D]' >Experience</p>
                 <p className='text-xs font-semibold'>{years}y {months}m</p>

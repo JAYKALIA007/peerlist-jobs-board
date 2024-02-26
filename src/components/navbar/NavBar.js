@@ -14,24 +14,25 @@ import { NavFooter } from "./NavFooter";
 
 export const NavBar = () => {
   return (
-    <div className="col-span-1 flex h-full flex-col justify-between  border-r-[1px] border-[#E1E4E8] px-6 py-4 text-sm">
+    <div className="col-span-1 flex h-full lg:flex-col justify-between border-r-[1px] border-[#E1E4E8] px-6 py-4 text-sm">
       <div>
         <NavHeader />
-        <div className="flex flex-col gap-6">
-          <div className="flex flex-col gap-2">
+        <div className="flex lg:flex-col gap-6">
+          <div className="flex lg:flex-col gap-2">
             <NavItem
               icon={<HomeIcon />}
               label={<span className="font-semibold">Scroll</span>}
+              showLabel={true}
             />
-            <NavItem icon={<CubeIcon />} label={"Projects"} />
-            <NavItem icon={<InboxIcon />} label={"Inbox"} />
-            <NavItem icon={<JobIcon />} label={"Jobs"} />
-            <NavItem icon={<SearchIcon />} label={"Search"} />
-            <NavItem icon={<NetworkIcon />} label={"My Network"} />
+            <NavItem icon={<CubeIcon />} label={"Projects"} showLabel={true}/>
+            <NavItem icon={<InboxIcon />} label={"Inbox"} showLabel={true}/>
+            <NavItem icon={<JobIcon />} label={"Jobs"} showLabel={true}/>
+            <NavItem icon={<SearchIcon />} label={"Search"} showLabel={true}/>
+            <NavItem icon={<NetworkIcon />} label={"My Network"} showLabel={true}/>
           </div>
-          <div className="flex flex-col gap-3">
-            <NavItem icon={<AdminUserImage />} label={"Yogini"} />
-            <NavItem icon={<LoomIcon />} label={<LoomLabel />} />
+          <div className="flex lg:flex-col gap-3">
+            <NavItem icon={<AdminUserImage />} label={"Yogini"} showLabel={false}/>
+            <NavItem icon={<LoomIcon />} label={<LoomLabel />} showLabel={false}/>
           </div>
         </div>
       </div>

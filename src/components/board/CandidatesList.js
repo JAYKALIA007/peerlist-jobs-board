@@ -30,7 +30,7 @@ export const CandidatesList = ({ candidates, type, onChange }) => {
       {isAppliedType && <AppliedListHeader count={candidates.length} />}
       {isShortlistedType && <ShortListedListHeader count={candidates.length} />}
       <div
-        className="container h-[545px] overflow-auto"
+        className="container h-[400px] lg:h-[545px] overflow-auto"
         id={type}
         onDrop={handleDrop}
         onDragOver={handleDragOver}
